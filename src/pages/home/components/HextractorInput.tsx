@@ -31,7 +31,7 @@ const HextractorInput = (props: HextractorInputProps) => {
         <textarea
           name="hextractor-input"
           id="hextractor-input"
-          className="w-full h-[480px] p-4 | border-[2px] border-black rounded placeholder:text-[12px] md:placeholder:text-base"
+          className="w-full h-[480px] p-4 | border-[2px] border-black rounded placeholder:text-[12px] md:placeholder:text-base whitespace-pre-wrap"
           placeholder={placeholder}
           value={inputValue}
           onChange={handleInputChange}
