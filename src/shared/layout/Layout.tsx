@@ -10,7 +10,9 @@ const Layout = (props: LayoutProps) => {
   return (
     <>
       <Header />
-      <main className="min-w-[320px] min-h-screen h-screen">{children}</main>
+      <main className="min-w-[320px] min-h-screen h-screen mt-32">
+        {children}
+      </main>
     </>
   );
 };
