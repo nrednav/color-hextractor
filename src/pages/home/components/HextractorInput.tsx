@@ -25,7 +25,7 @@ const HextractorInput = (props: HextractorInputProps) => {
   };
 
   return (
-    <div className="m-8">
+    <section className="m-8">
       <h2 className="py-4">Input</h2>
       <form className="flex flex-col items-center" onSubmit={handleFormSubmit}>
         <textarea
@@ -40,7 +40,7 @@ const HextractorInput = (props: HextractorInputProps) => {
           Extract Colors
         </button>
       </form>
-    </div>
+    </section>
   );
 };
 

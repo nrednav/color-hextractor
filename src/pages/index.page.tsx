@@ -27,8 +27,12 @@ const Home = () => {
   return (
     <div className="w-full max-w-[800px] mx-auto">
       <HextractorInput onSubmit={onInputSubmit} />
-      <HextractorOutput extractedColors={extractedColors} />
-      <HextractorActions />
+      {extractedColors.length > 0 && (
+        <>
+          <HextractorOutput extractedColors={extractedColors} />
+          <HextractorActions extractedColors={extractedColors} />
+        </>
+      )}
       <ClipboardSnackbar />
     </div>
   );
