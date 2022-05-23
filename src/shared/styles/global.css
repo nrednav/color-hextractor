@@ -1,3 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .dr {
+    outline: 1px solid #ef4444;
+  }
+  .dg {
+    outline: 1px solid #22c55e;
+  }
+  .db {
+    outline: 1px solid #2563eb;
+  }
+}
+
 *,
 *::before,
 *::after {
