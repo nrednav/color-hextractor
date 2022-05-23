@@ -10,7 +10,7 @@ const HextractorInput = (props: HextractorInputProps) => {
   const [inputValue, setInputValue] = useState("");
 
   const placeholder =
-    "How to use:-\n\nPaste any text that contains colors expressed in a hexadecimal format. This could be text containing a single hex-string or even delimited strings, where the hex-strings could be separated by commas, spaces or new-lines.\n\nYou can even paste in an entire CSS file. This tool will search through the text and extract all unique colors it finds.\n\nAdditonal Features:-\n\n- Click on a color cell to copy that colors hex-string to the clipboard.\n- Copy all color hex-strings to the clipboard\n- Export the entire color grid as a JPEG file.\n";
+    "Copy & paste any text that contains colors expressed in a hexadecimal format, and this tool will extract & output all the colors in a grid below.";
 
   const handleFormSubmit = (e: React.SyntheticEvent) => {
     e.preventDefault();
@@ -31,7 +31,7 @@ const HextractorInput = (props: HextractorInputProps) => {
         <textarea
           name="hextractor-input"
           id="hextractor-input"
-          className="w-full h-[480px] p-4 | border-[2px] border-black rounded placeholder:text-[12px] md:placeholder:text-base whitespace-pre-wrap"
+          className="w-full h-[320px] md:h-[480px] p-4 | border-[2px] border-black rounded placeholder:text-[12px] md:placeholder:text-base whitespace-pre-wrap"
           placeholder={placeholder}
           value={inputValue}
           onChange={handleInputChange}
